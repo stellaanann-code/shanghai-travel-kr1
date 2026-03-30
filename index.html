@@ -3,32 +3,1504 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 상하이 여행 가이드북 무료 증정</title>
+    <title>🇰🇷 한국인을 위한 상하이 여행 가이드 - 플라타너스 거리 시티워킹</title>
     <style>
-        body { font-family: 'Noto Sans KR', sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; text-align: center; color: #333; }
-        .container { max-width: 600px; margin: 100px auto; background: white; padding: 60px 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
-        h1 { font-size: 28px; line-height: 1.5; margin-bottom: 25px; font-weight: 700; }
-        p { font-size: 18px; color: #666; margin-bottom: 45px; line-height: 1.8; }
-        .badge { display: inline-block; background-color: #e8f0fe; color: #1967d2; padding: 5px 15px; border-radius: 20px; font-size: 14px; font-weight: bold; margin-bottom: 20px; }
-        button { background-color: #4285F4; color: white; border: none; padding: 18px 50px; border-radius: 12px; font-size: 20px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3); }
-        button:hover { background-color: #357ae8; transform: translateY(-3px); box-shadow: 0 6px 20px rgba(66, 133, 244, 0.4); }
-        button:active { transform: translateY(0); }
-        footer { margin-top: 40px; font-size: 13px; color: #bbb; line-height: 1.6; }
-        a { color: #bbb; text-decoration: underline; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans KR', sans-serif;
+            line-height: 1.7;
+            color: #37352f;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 96px 60px;
+        }
+
+        .header {
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #37352f;
+            margin-bottom: 16px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .header h2 {
+            font-size: 1.25em;
+            color: #737373;
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+
+        .header p {
+            font-size: 1em;
+            color: #737373;
+            line-height: 1.7;
+            max-width: 700px;
+        }
+
+        .route-info {
+            background: #f7f6f3;
+            border-radius: 8px;
+            padding: 32px;
+            margin-bottom: 48px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 24px;
+        }
+
+        .route-item {
+            text-align: center;
+        }
+
+        .route-item h3 {
+            font-size: 0.85em;
+            color: #737373;
+            margin-bottom: 8px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .route-item p {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #37352f;
+        }
+
+        .route-path {
+            background: #fafafa;
+            padding: 24px;
+            border-radius: 6px;
+            margin-bottom: 48px;
+            border-left: 3px solid #e6e6e6;
+        }
+
+        .route-path h3 {
+            color: #37352f;
+            font-size: 1em;
+            margin-bottom: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .route-path p {
+            color: #5f5f5f;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        .section {
+            margin-bottom: 64px;
+        }
+
+        .section h2 {
+            font-size: 1.75em;
+            color: #37352f;
+            margin-bottom: 32px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .spot-card {
+            background: #ffffff;
+            padding: 32px 0;
+            border-bottom: 1px solid #e6e6e6;
+            transition: all 0.2s ease;
+        }
+
+        .spot-card:last-child {
+            border-bottom: none;
+        }
+
+        .spot-card h3 {
+            font-size: 1.25em;
+            color: #37352f;
+            margin-bottom: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .spot-card h3 .number {
+            background: #f7f6f3;
+            color: #37352f;
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            font-weight: 600;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .info-item {
+            background: #fafafa;
+            padding: 16px;
+            border-radius: 6px;
+        }
+
+        .info-item h4 {
+            color: #737373;
+            font-size: 0.8em;
+            margin-bottom: 8px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .info-item p {
+            color: #37352f;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        .cafe-list {
+            background: #fafafa;
+            border-radius: 6px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .cafe-item {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 16px;
+            border-radius: 6px;
+            border: 1px solid #e6e6e6;
+        }
+
+        .cafe-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .cafe-item h4 {
+            color: #37352f;
+            font-size: 1em;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .cafe-item ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .cafe-item li {
+            color: #5f5f5f;
+            margin: 6px 0;
+            padding-left: 18px;
+            position: relative;
+            line-height: 1.5;
+            font-size: 0.95em;
+        }
+
+        .cafe-item li:before {
+            content: "•";
+            color: #737373;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .photo-points {
+            background: #f7f6f3;
+            border-radius: 6px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .photo-points h4 {
+            font-size: 0.95em;
+            margin-bottom: 16px;
+            font-weight: 600;
+            color: #37352f;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .photo-points ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .photo-points li {
+            margin: 10px 0;
+            padding-left: 24px;
+            position: relative;
+            line-height: 1.6;
+            color: #5f5f5f;
+        }
+
+        .photo-points li:before {
+            content: "📷";
+            position: absolute;
+            left: 0;
+        }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            background: #ffffff;
+        }
+
+        .schedule-table thead {
+            background: #f7f6f3;
+        }
+
+        .schedule-table th,
+        .schedule-table td {
+            padding: 14px 18px;
+            text-align: left;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        .schedule-table th {
+            font-weight: 600;
+            font-size: 0.85em;
+            color: #737373;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .schedule-table tbody tr:hover {
+            background: #fafafa;
+        }
+
+        .tips-box {
+            background: #f7f6f3;
+            border-radius: 6px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .tips-box h4 {
+            color: #37352f;
+            font-size: 1em;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .tips-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .tips-box li {
+            color: #5f5f5f;
+            margin: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .tips-box li:before {
+            content: "💡";
+            position: absolute;
+            left: 0;
+        }
+
+        .price-guide {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin: 24px 0;
+        }
+
+        .price-category {
+            background: #fafafa;
+            padding: 24px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .price-category h4 {
+            color: #737373;
+            font-size: 0.8em;
+            margin-bottom: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .price-category p {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #37352f;
+            margin-bottom: 6px;
+        }
+
+        .price-category span {
+            font-size: 0.85em;
+            color: #737373;
+        }
+
+        .language-tips {
+            background: #fafafa;
+            border-radius: 6px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .language-tips h4 {
+            color: #37352f;
+            font-size: 1.1em;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .language-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .language-table th,
+        .language-table td {
+            padding: 14px 18px;
+            text-align: left;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        .language-table th {
+            background: #f7f6f3;
+            font-weight: 600;
+            font-size: 0.85em;
+            color: #737373;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .language-table tbody tr:hover {
+            background: #fafafa;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #f7f6f3 0%, #ffffff 100%);
+            border-radius: 12px;
+            padding: 48px;
+            margin-top: 80px;
+            border: 2px solid #e6e6e6;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 1.75em;
+            color: #37352f;
+            margin-bottom: 16px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .cta-section .subtitle {
+            font-size: 1em;
+            color: #737373;
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        .cta-form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9em;
+            color: #37352f;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #e6e6e6;
+            border-radius: 6px;
+            font-size: 1em;
+            color: #37352f;
+            background: #ffffff;
+            font-family: inherit;
+            transition: all 0.2s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #37352f;
+            box-shadow: 0 0 0 3px rgba(55, 53, 47, 0.1);
+        }
+
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px 24px;
+            background: #37352f;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 8px;
+        }
+
+        .submit-btn:hover {
+            background: #2a2825;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(55, 53, 47, 0.15);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .cta-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+            padding-top: 32px;
+            border-top: 1px solid #e6e6e6;
+        }
+
+        .cta-feature {
+            text-align: center;
+        }
+
+        .cta-feature .icon {
+            font-size: 2em;
+            margin-bottom: 12px;
+        }
+
+        .cta-feature h4 {
+            font-size: 0.95em;
+            color: #37352f;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .cta-feature p {
+            font-size: 0.85em;
+            color: #737373;
+            line-height: 1.5;
+        }
+
+        .final-section {
+            background: #f7f6f3;
+            border-radius: 8px;
+            padding: 48px;
+            text-align: center;
+            margin-top: 64px;
+        }
+
+        .final-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 24px;
+            font-weight: 700;
+            color: #37352f;
+        }
+
+        .final-section p {
+            font-size: 1em;
+            line-height: 1.8;
+            margin-bottom: 16px;
+            color: #5f5f5f;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #737373;
+            font-size: 0.85em;
+            border-top: 1px solid #e6e6e6;
+            margin-top: 64px;
+        }
+
+        h3 {
+            color: #37352f;
+            font-size: 1.1em;
+            margin: 28px 0 16px 0;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 48px 24px;
+            }
+
+            .header {
+                margin-bottom: 40px;
+                padding-bottom: 32px;
+            }
+
+            .header h1 {
+                font-size: 1.75em;
+            }
+
+            .header h2 {
+                font-size: 1.1em;
+            }
+
+            .cta-section {
+                padding: 32px 24px;
+            }
+
+            .cta-features {
+                grid-template-columns: 1fr;
+            }
+
+            .schedule-table {
+                font-size: 0.9em;
+            }
+
+            .schedule-table th,
+            .schedule-table td {
+                padding: 12px 10px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="badge">2026 최신판 업데이트 완료</div>
-        <h1>🇨🇳 상하이 여행의 모든 것,<br>가이드북 하나로 끝내세요!</h1>
-        <p>현지인이 알려주는 맛집부터 결제 팁까지,<br>지금 바로 PDF 가이드북을 무료로 받아보세요.</p>
-        
-        <button type="button" onclick="window.open('https://forms.gle/6rdELpMYqGdRfxuz7', '_blank')">가이드북 지금 받기 (무료)</button>
-        
-        <footer>
-            © 2026 Shanghai Travel Guide. All rights reserved. <br> 
-            <a href="#">개인정보 처리방침</a> | <a href="#">이용약관</a>
+        <!-- Header -->
+        <div class="header">
+            <h1>🇰🇷 한국인을 위한 상하이 여행 가이드</h1>
+            <h2>상하이 플라타너스 거리 시티워킹 완벽 코스</h2>
+            <p>상하이의 숨겨진 매력을 발견하는 최고의 여행 경로<br>
+            빈티지와 현대, 힙한 카페와 우아한 건축이 조화롭게 어우러진 4km의 마법의 거리</p>
+        </div>
+
+        <!-- Route Info -->
+        <div class="route-info">
+            <div class="route-item">
+                <h3>총 거리</h3>
+                <p>약 4km</p>
+            </div>
+            <div class="route-item">
+                <h3>소요 시간</h3>
+                <p>3-4시간</p>
+            </div>
+            <div class="route-item">
+                <h3>최적 시간</h3>
+                <p>10:00-16:00</p>
+            </div>
+            <div class="route-item">
+                <h3>최적 계절</h3>
+                <p>3-5월, 9-11월</p>
+            </div>
+        </div>
+
+        <!-- Route Path -->
+        <div class="route-path">
+            <h3>🗺️ 루트 개요</h3>
+            <p>무캉루(武康大楼) → 위위안루(五原路) → 우루무치중로(乌鲁木齐中路) → 옌칭루(延庆路) → 푸민루(富民路) → 동후루(东湖路) → 융캉루(永康路) → 융지아루(永嘉路)</p>
+        </div>
+
+        <!-- Detailed Route Guide -->
+        <div class="section">
+            <h2>🚶‍♀️ 상세 루트 가이드</h2>
+
+            <!-- Spot 1 -->
+            <div class="spot-card">
+                <h3><span class="number">1</span> 무캉루(武康大楼) - 상하이의 랜드마크</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h4>📍 위치</h4>
+                        <p>쉬후이구 우캉로 395번지</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>🚇 지하철</h4>
+                        <p>10호선/11호선 교통대학교역 7번 출구, 도보 5분</p>
+                    </div>
+                </div>
+
+                <p style="margin: 20px 0; color: #5f5f5f;"><strong>건축 정보:</strong> 1924년 헝가리 건축가 우닥크 설계, 아르데코 + 노르만디 양식, "요트 건물"으로 불림, 세계적으로 드문 삼각형 건물</p>
+
+                <div class="photo-points">
+                    <h4>📸 사진 포인트 (최고의 앵글)</h4>
+                    <ul>
+                        <li><strong>건물 맞은편 대각선:</strong> 건물 전체가 한 프레임에 들어가는 최고의 앵글</li>
+                        <li><strong>건물 입구 아치:</strong> 인물 사진 촬영 최적</li>
+                        <li><strong>야간 촬영:</strong> 조명이 켜진 밤의 무캉루, 해가 진 후 30분 후가 최적</li>
+                    </ul>
+                </div>
+
+                <div class="tips-box">
+                    <h4>주변 볼거리</h4>
+                    <ul>
+                        <li>스타벅스 무캉루점 - 건물 바로 아래 위치</li>
+                        <li>피즈 커피(Peet's Coffee) - 미국 프리미엄 커피 체인</li>
+                        <li>알라 모코(Aroma Moko) - 인스타 감성 빵집</li>
+                    </ul>
+                </div>
+
+                <p style="margin-top: 20px; color: #737373;"><strong>⏱ 추천 체류 시간:</strong> 30-40분</p>
+            </div>
+
+            <!-- Spot 2 -->
+            <div class="spot-card">
+                <h3><span class="number">2</span> 위위안루(五原路) - 보물 가득한 쇼핑 거리</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h4>📏 길이</h4>
+                        <p>820m (완주 10분 미만)</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>🏪 매장 수</h4>
+                        <p>300개 이상의 숨겨진 가게</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>🚌 버스</h4>
+                        <p>없음 (오직 도보만 가능)</p>
+                    </div>
+                </div>
+
+                <div class="cafe-list">
+                    <h4>🛍️ 추천 매장</h4>
+
+                    <div class="cafe-item">
+                        <h4>💰 발재상점 (发财商店)</h4>
+                        <ul>
+                            <li><strong>위치:</strong> 위위안루 288번지 1층</li>
+                            <li><strong>영업 시간:</strong> 오후 2시 ~ 오후 8시</li>
+                            <li><strong>특징:</strong> 빈티지 숍, 해외 경매에서 구매한 희귀 아이템</li>
+                            <li><strong>추천:</strong> 빈티지 의류, 아이스크림, 레트로 아이템</li>
+                            <li><strong>⚠️ 팁:</strong> 오후 2시 이후에 방문할 것!</li>
+                        </ul>
+                    </div>
+
+                    <div class="cafe-item">
+                        <h4>🏠 Homtique (홈티크)</h4>
+                        <ul>
+                            <li><strong>위치:</strong> 위위안루 229번지</li>
+                            <li><strong>영업 시간:</strong> 오전 11시 ~ 오후 7시</li>
+                            <li><strong>특징:</strong> 북아프리카 스타일 가구 매장</li>
+                            <li><strong>브랜드:</strong> Driade, Verpan, Sancat 등 40개 이상 수입 브랜드</li>
+                        </ul>
+                    </div>
+
+                    <div class="cafe-item">
+                        <h4>🌟 OPEN THE MARKET</h4>
+                        <ul>
+                            <li><strong>위치:</strong> 위위안루 315번지</li>
+                            <li><strong>영업 시간:</strong> 오전 11시 ~ 오후 8시</li>
+                            <li><strong>특징:</strong> 라이프스타일 컨셉 숍</li>
+                            <li><strong>아이템:</strong> 의류, 수공예품, 문구, 액세서리, 식물</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="photo-points">
+                    <h4>📸 사진 포인트</h4>
+                    <ul>
+                        <li>상점 앞 빈티지 디스플레이</li>
+                        <li>골목길의 조용한 분위기</li>
+                        <li>벽화와 오래된 건물들</li>
+                    </ul>
+                </div>
+
+                <p><strong>⏱ 추천 체류 시간:</strong> 60-90분</p>
+            </div>
+
+            <!-- Spot 3 -->
+            <div class="spot-card">
+                <h3><span class="number">3</span> 우루무치중로(乌鲁木齐中路) - 카페 애호가의 성지</h3>
+
+                <div class="cafe-list">
+                    <h4>☕ 추천 카페</h4>
+
+                    <div class="cafe-item">
+                        <h4>🌿 Warming. (워밍)</h4>
+                        <ul>
+                            <li><strong>위치:</strong> 우루무치중로 348번지</li>
+                            <li><strong>영업 시간:</strong> 오전 8시 ~ 오후 5시 (평일), 8-6시 (주말)</li>
+                            <li><strong>컨셉:</strong> 초록색 테마, 작고 아기자기한 매장</li>
+                            <li><strong>메뉴:</strong> 오트 라떼 20위안, 아메리카노 20위안, 디저트 15-25위안</li>
+                            <li><strong>특징:</strong> 가성비 최고, 큐피커피와 동급 퀄리티</li>
+                            <li><strong>💡 팁:</strong> 야외 좌석에서 커피를 즐기며 사람 구경하기</li>
+                        </ul>
+                    </div>
+
+                    <div class="cafe-item">
+                        <h4>🍃 일본식 극미니 카페</h4>
+                        <ul>
+                            <li><strong>위치:</strong> 우루무치중로 골목길</li>
+                            <li><strong>영업 시간:</strong> 오전 8시 ~ 오후 5시</li>
+                            <li><strong>특징:</strong> 극초소형 매장, 일본식 미니멀리즘</li>
+                            <li><strong>메뉴:</strong> 핸드드립, 일본식 에스프레소 음료</li>
+                            <li><strong>💡 팁:</strong> 매장이 작아 야외에서 마시는 것이 일반적</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="photo-points">
+                    <h4>📸 사진 포인트</h4>
+                    <ul>
+                        <li>초록색 커피숍 외관</li>
+                        <li>야외 좌석에서의 커피와 도로 풍경</li>
+                        <li>골목길의 인스타 감성 벽화</li>
+                    </ul>
+                </div>
+
+                <p><strong>⏱ 추천 체류 시간:</strong> 40-60분</p>
+            </div>
+
+            <!-- Spot 4 -->
+            <div class="spot-card">
+                <h3><span class="number">4</span> 옌칭루(延庆路) - 조용한 숨겨진 보물</h3>
+                <p><strong>특징:</strong> 가장 조용한 거리, 인파 적음, 약 800m</p>
+                <p><strong>하이라이트:</strong> 1930년대 지어진 아르데코 스타일 주택, 현지인들이 주로 이용하는 작은 카페들</p>
+
+                <div class="photo-points">
+                    <h4>📸 사진 포인트</h4>
+                    <ul>
+                        <li>오래된 건물의 아치 입구</li>
+                        <li>골목길의 플라타너스 그늘</li>
+                        <li>현지 아주머니가 길에서 야채 파는 모습</li>
+                    </ul>
+                </div>
+
+                <p><strong>⏱ 추천 체류 시간:</strong> 20-30분</p>
+            </div>
+
+            <!-- Spot 5 -->
+            <div class="spot-card">
+                <h3><span class="number">5</span> 푸민루(富民路) - 프랑스식 로맨틱 거리</h3>
+                <p><strong>특징:</strong> "부자의 거리", 약 1km, 하이엔드 레스토랑 + 아티제널 커피숍, 야간 분위기 최고</p>
+
+                <div class="cafe-list">
+                    <h4>🍽️ 추천 레스토랑 & 카페</h4>
+
+                    <div class="cafe-item">
+                        <h4>🥩 bistro11 (비스토르 11)</h4>
+                        <ul>
+                            <li><strong>위치:</strong> 푸민루 324번지</li>
+                            <li><strong>영업 시간:</strong> 오전 11시 ~ 오후 10시</li>
+                            <li><strong>스타일:</strong> 프랑스식 비스트로</li>
+                            <li><strong>추천 메뉴:</strong> 스테이크 & 감자튀김 98위안, 파스타 68-120위안</li>
+                            <li><strong>⚠️ 팁:</strong> 저녁 시간 대기 시간 있음</li>
+                        </ul>
+                    </div>
+
+                    <div class="cafe-item">
+                        <h4>🐱 猫尔本 (마오얼벤)</h4>
+                        <ul>
+                            <li><strong>위치:</strong> 푸민루 38번지</li>
+                            <li><strong>영업 시간:</strong> 오전 10시 ~ 오후 9시</li>
+                            <li><strong>컨셉:</strong> 고양이 카페 + 커피숍</li>
+                            <li><strong>특징:</strong> 귀여운 고양이들과 함께 커피 즐기기</li>
+                        </ul>
+                    </div>
+
+                    <div class="cafe-item">
+                        <h4>🧁 泽田本家 (쩌톈본지아)</h4>
+                        <ul>
+                            <li><strong>위치:</strong> 푸민루 38번지</li>
+                            <li><strong>영업 시간:</strong> 오전 10시 ~ 오후 9시</li>
+                            <li><strong>컨셉:</strong> 크림 퍼프 전문점</li>
+                            <li><strong>인기 메뉴:</strong> 크림 퍼프 18-25위안</li>
+                            <li><strong>특징:</strong> 한국인에게 인기, 오픈 키친</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h4>🌙 야간 분위기</h4>
+                    <ul>
+                        <li>저녁 7시 이후: 거리 조명 켜짐</li>
+                        <li>추천: 저녁 식사 후 산책</li>
+                        <li>술집과 바도 많아 밤의 분위기 최고</li>
+                    </ul>
+                </div>
+
+                <p><strong>⏱ 추천 체류 시간:</strong> 50-70분</p>
+            </div>
+
+            <!-- Spot 6 -->
+            <div class="spot-card">
+                <h3><span class="number">6</span> 동후루(东湖路) - 우아한 산책로</h3>
+                <p><strong>특징:</strong> 가장 우아하고 조용한 거리, 약 800m, 넓은 도로, 우아한 가로수</p>
+                <p><strong>하이라이트:</strong> 고급 아파트, 아티제널 베이커리, 조용하고 우아함</p>
+                <p><strong>⏱ 추천 체류 시간:</strong> 15-20분</p>
+            </div>
+
+            <!-- Spot 7 -->
+            <div class="spot-card">
+                <h3><span class="number">7</span> 융캉루(永康路) - 커피 애호가의 천국</h3>
+                <p><strong>특징:</strong> "커피 거리", 전직 바 거리 → 커피 거리로 변신, 600m에 카페와 디저트숍 밀집</p>
+
+                <div class="cafe-list">
+                    <h4>☕ 추천 카페 (전설급)</h4>
+
+                    <div class="cafe-item">
+                        <h4>⭐ Cafe del Volcan (카페 델 볼칸)</h4>
+                        <ul>
+                            <li><strong>위치:</strong> 융캉루 96번지</li>
+                            <li><strong>영업 시간:</strong> 오전 8시 ~ 오후 8시</li>
+                            <li><strong>역사:</strong> 2007년 개업, 10년 넘은 전설적 카페</li>
+                            <li><strong>수상:</strong> 2018년 아시아 50대 카페 선정</li>
+                            <li><strong>추천 메뉴:</strong> 핸드드립 35-50위안, 에스프레소 25-35위안</li>
+                            <li><strong>특징:</strong> 상하이 커피 애호가들의 성지</li>
+                            <li><strong>⚠️ 팁:</strong> 주말 오후는 대기 시간이 있을 수 있음</li>
+                        </ul>
+                    </div>
+
+                    <div class="cafe-item">
+                        <h4>🍰 In Dough We Trust (인 더우 위 트러스트)</h4>
+                        <ul>
+                            <li><strong>위치:</strong> 융캉루 96번지 (Cafe del Volcan 옆)</li>
+                            <li><strong>영업 시간:</strong> 오전 10시 ~ 오후 6시</li>
+                            <li><strong>컨셉:</strong> 티라미소 전문점</li>
+                            <li><strong>인기 메뉴:</strong> 복숭아 라즈베리 티라미소 38위안 (일일 한정)</li>
+                            <li><strong>특징:</strong> 한국인에게 인기, 인스타 감성 디저트</li>
+                            <li><strong>⚠️ 팁:</strong> 인기 메뉴는 오후 2-3시 전에 품절될 수 있음</li>
+                        </ul>
+                    </div>
+
+                    <div class="cafe-item">
+                        <h4>☕ Remi (레미)</h4>
+                        <ul>
+                            <li><strong>위치:</strong> 융캉루 110번지</li>
+                            <li><strong>영업 시간:</strong> 오전 9시 ~ 오후 9시</li>
+                            <li><strong>스타일:</strong> 클래식 커피숍, 상하이 레트로</li>
+                            <li><strong>추천 메뉴:</strong> 핸드드립 38-50위안, 크림 케이크 18-25위안</li>
+                            <li><strong>특징:</strong> 상하이의 옛 모습 그대로 보존</li>
+                        </ul>
+                    </div>
+
+                    <div class="cafe-item">
+                        <h4>🥘 熠盛粤味 (이셩웨이)</h4>
+                        <ul>
+                            <li><strong>위치:</strong> 융캉루 120번지</li>
+                            <li><strong>영업 시간:</strong> 오전 11시 ~ 오후 10시</li>
+                            <li><strong>스타일:</strong> 광둥식 식당</li>
+                            <li><strong>추천 메뉴:</strong> 죽방밥 45-68위안, 공심채 28-35위안</li>
+                            <li><strong>특징:</strong> 11년 넘은 인기 식당</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h4>🧁 추천 디저트</h4>
+                    <ul>
+                        <li>크림 케이크 (奶油小方): 15-25위안</li>
+                        <li>티라미소 (提拉米苏): 28-45위안</li>
+                        <li>에클레尔 (Éclair): 18-25위안</li>
+                        <li>마카롱 (马卡龙): 8-12위안/개</li>
+                    </ul>
+                </div>
+
+                <p><strong>⏱ 추천 체류 시간:</strong> 60-90분</p>
+            </div>
+
+            <!-- Spot 8 -->
+            <div class="spot-card">
+                <h3><span class="number">8</span> 융지아루(永嘉路) - 가장 비싼 거리</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h4>📍 위치</h4>
+                        <p>쉬후이구 융지아루, 지하철 1호선 헝산로역 1번 출구, 도보 900m</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>📏 길이</h4>
+                        <p>약 2km</p>
+                    </div>
+                </div>
+
+                <p><strong>특징:</strong> "상하이에서 가장 비싼 거리", 한 채의 별장이 루이비통 매장 가격</p>
+
+                <div class="photo-points">
+                    <h4>🌿 하이라이트 - 녹색 집 (绿房子 - 넙뤼팡즈)</h4>
+                    <ul>
+                        <li><strong>위치:</strong> 융지아루 425번지 (타이위안로 교차로)</li>
+                        <li><strong>특징:</strong> 담쟁이로 덮인 독특한 건물, "녹색의 성"</li>
+                        <li><strong>건립:</strong> 1990년대</li>
+                        <li><strong>📸 최고 촬영 포인트:</strong> 거리 대각선에서 건물 전체 촬영</li>
+                        <li><strong>⚠️ 팁:</strong> 오후 2-5시 (햇빛이 있는 시간), 하늘이 맑은 날 방문할 것!</li>
+                    </ul>
+                </div>
+
+                <div class="cafe-list">
+                    <h4>☕ 추천 장소</h4>
+
+                    <div class="cafe-item">
+                        <h4>🥐 咖啡面包好天气 (커페미엔바오하오티엔치)</h4>
+                        <ul>
+                            <li><strong>위치:</strong> 융지아루 362번지</li>
+                            <li><strong>영업 시간:</strong> 오전 8시 ~ 오후 6시</li>
+                            <li><strong>컨셉:</strong> 인스타 감성 빵집</li>
+                            <li><strong>인기 메뉴:</strong> 크로와상 18-25위안, 바게트 15-20위안</li>
+                            <li><strong>특징:</strong> 한국인에게 인기, 인스타 업로드 필수</li>
+                        </ul>
+                    </div>
+
+                    <div class="cafe-item">
+                        <h4>🍺 GOOSE ISLAND TAPROOM (구스 아일랜드 탭룸)</h4>
+                        <ul>
+                            <li><strong>위치:</strong> 융지아루 330번지</li>
+                            <li><strong>영업 시간:</strong> 오후 4시 ~ 새벽 2시</li>
+                            <li><strong>컨셉:</strong> 미국 크래프트 비어</li>
+                            <li><strong>추천 메뉴:</strong> IPA 45-68위안/잔, 스타우트 50-75위안/잔</li>
+                            <li><strong>분위기:</strong> 힙한 바, 젊은 인파</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p><strong>⏱ 추천 체류 시간:</strong> 40-60분</p>
+            </div>
+        </div>
+
+        <!-- Food Guide -->
+        <div class="section">
+            <h2>🍽️ 미식 가이드</h2>
+
+            <h3>커피 & 카페</h3>
+            <div class="price-guide">
+                <div class="price-category">
+                    <h4>아메리카노</h4>
+                    <p>20-30위안</p>
+                    <span>美式咖啡</span>
+                </div>
+                <div class="price-category">
+                    <h4>라떼</h4>
+                    <p>30-40위안</p>
+                    <span>拿铁</span>
+                </div>
+                <div class="price-category">
+                    <h4>핸드드립</h4>
+                    <p>35-50위안</p>
+                    <span>手冲咖啡</span>
+                </div>
+                <div class="price-category">
+                    <h4>에스프레소</h4>
+                    <p>25-35위안</p>
+                    <span>浓缩咖啡</span>
+                </div>
+            </div>
+
+            <h3>디저트 & 베이커리</h3>
+            <div class="price-guide">
+                <div class="price-category">
+                    <h4>크로와상</h4>
+                    <p>12-18위안</p>
+                    <span>可颂</span>
+                </div>
+                <div class="price-category">
+                    <h4>티라미소</h4>
+                    <p>28-45위안</p>
+                    <span>提拉米苏</span>
+                </div>
+                <div class="price-category">
+                    <h4>크림 케이크</h4>
+                    <p>15-25위안</p>
+                    <span>奶油小方</span>
+                </div>
+                <div class="price-category">
+                    <h4>에클레尔</h4>
+                    <p>18-25위안</p>
+                    <span>Éclair</span>
+                </div>
+            </div>
+
+            <h3>브런치 & 식사</h3>
+            <div class="price-guide">
+                <div class="price-category">
+                    <h4>브런치 세트</h4>
+                    <p>50-120위안</p>
+                    <span>Brunch</span>
+                </div>
+                <div class="price-category">
+                    <h4>파스타</h4>
+                    <p>60-150위안</p>
+                    <span>Pasta</span>
+                </div>
+                <div class="price-category">
+                    <h4>스테이크</h4>
+                    <p>98-200위안</p>
+                    <span>Steak</span>
+                </div>
+                <div class="price-category">
+                    <h4>볶음밥</h4>
+                    <p>35-68위안</p>
+                    <span>Fried Rice</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transportation -->
+        <div class="section">
+            <h2>🚇 교통 정보</h2>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4>🚀 출발점 (무캉루)</h4>
+                    <p><strong>지하철:</strong> 10호선/11호선 교통대학교역 7번 출구, 도보 5분<br>
+                    <strong>버스:</strong> 96路, 824路 → 淮海中路武康路站</p>
+                </div>
+                <div class="info-item">
+                    <h4>🏁 종착점 (융지아루)</h4>
+                    <p><strong>지하철:</strong> 1호선 헝산로역 1번 출구, 도보 900m (약 12분)</p>
+                </div>
+            </div>
+
+            <div class="tips-box">
+                <h4>💡 이동 팁</h4>
+                <ul>
+                    <li><strong>도보:</strong> 코스 전체 도보 가능 (약 4km), 편안한 신발 필수!</li>
+                    <li><strong>공유 자전거:</strong> 단거리 이동 시 유용, 1시간당 1-3위안</li>
+                    <li><strong>택시/따따:</strong> 인파가 많은 시간 피하기, 2-3km 당 10-20위안</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Practical Tips -->
+        <div class="section">
+            <h2>💡 한국인을 위한 실용 팁</h2>
+
+            <h3>준비물 체크리스트</h3>
+            <div class="cafe-list">
+                <ul>
+                    <li><strong>✅ 필수:</strong> 편안한 운동화, 지도 앱, 결제 앱, 번역 앱, 충전기</li>
+                    <li><strong>🌟 추천:</strong> 선글라스, 모자, 물병, 작은 가방</li>
+                </ul>
+            </div>
+
+            <h3>결제 방법</h3>
+            <div class="tips-box">
+                <ul>
+                    <li><strong>알리페이(支付宝):</strong> 한국 신용카드 등록 가능, 대부분 상점에서 사용 가능</li>
+                    <li><strong>위챗페이(微信支付):</strong> 현지인이 주로 사용</li>
+                    <li><strong>현금:</strong> 소액은 현금 필요할 수 있음, 100, 50위안 권종 준비</li>
+                </ul>
+            </div>
+
+            <h3>언어 팁</h3>
+            <div class="language-tips">
+                <h4>필수 한국어-중국어 단어</h4>
+                <table class="language-table">
+                    <thead>
+                        <tr>
+                            <th>한국어</th>
+                            <th>중국어</th>
+                            <th>발음</th>
+                            <th>상황</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>안녕하세요</td>
+                            <td>你好</td>
+                            <td>니하오</td>
+                            <td>인사</td>
+                        </tr>
+                        <tr>
+                            <td>감사합니다</td>
+                            <td>谢谢</td>
+                            <td>시에시에</td>
+                            <td>감사</td>
+                        </tr>
+                        <tr>
+                            <td>커피 주세요</td>
+                            <td>请给我一杯咖啡</td>
+                            <td>칭거이워베이베이카페이</td>
+                            <td>주문</td>
+                        </tr>
+                        <tr>
+                            <td>계산해주세요</td>
+                            <td>结账</td>
+                            <td>지에좌이</td>
+                            <td>결제</td>
+                        </tr>
+                        <tr>
+                            <td>화장실 어디예요?</td>
+                            <td>洗手间在哪里?</td>
+                            <td>시쇼우지엔짜이날리?</td>
+                            <td>질문</td>
+                        </tr>
+                        <tr>
+                            <td>얼마예요?</td>
+                            <td>多少钱?</td>
+                            <td>뚜오샤오치엔?</td>
+                            <td>가격 문의</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>주의사항</h3>
+            <div class="tips-box">
+                <ul>
+                    <li><strong>⏰ 시간:</strong> 인기 카페는 주말에 대기 시간 있음, 많은 매장이 오후 2시 이후 영업 시작</li>
+                    <li><strong>🚭 흡연:</strong> 지정된 장소에서만 흡연, 길거리 흡연 금지</li>
+                    <li><strong>🚽 화장실:</strong> 편의점, 지하철역, 백화점 이용</li>
+                    <li><strong>📸 인파:</strong> 주말 오후 인파 많음, 오전 10시 이전 도착 추천</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Schedule -->
+        <div class="section">
+            <h2>🎯 완벽한 1일 계획표</h2>
+
+            <h3>오전 코스 (10:00-13:00)</h3>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>시간</th>
+                        <th>활동</th>
+                        <th>장소</th>
+                        <th>체류 시간</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10:00</td>
+                        <td>무캉루 도착 및 촬영</td>
+                        <td>무캉루</td>
+                        <td>30분</td>
+                    </tr>
+                    <tr>
+                        <td>10:30</td>
+                        <td>위위안루 산책</td>
+                        <td>위위안루</td>
+                        <td>60분</td>
+                    </tr>
+                    <tr>
+                        <td>11:30</td>
+                        <td>우루무치중로 브런치</td>
+                        <td>Warming. 카페</td>
+                        <td>60분</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="tips-box">
+                <h4>💡 오전 팁</h4>
+                <ul>
+                    <li>인파가 적어 촬영 최적</li>
+                    <li>에너지 충전 위한 브런치 필수</li>
+                    <li>카페에서 여유로운 휴식</li>
+                </ul>
+            </div>
+
+            <h3>오후 코스 (13:00-17:00)</h3>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>시간</th>
+                        <th>활동</th>
+                        <th>장소</th>
+                        <th>체류 시간</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>13:00</td>
+                        <td>옌칭루 산책</td>
+                        <td>옌칭루</td>
+                        <td>20분</td>
+                    </tr>
+                    <tr>
+                        <td>13:30</td>
+                        <td>푸민루 식사 또는 카페</td>
+                        <td>bistro11</td>
+                        <td>60분</td>
+                    </tr>
+                    <tr>
+                        <td>14:30</td>
+                        <td>동후루 산책</td>
+                        <td>동후루</td>
+                        <td>15분</td>
+                    </tr>
+                    <tr>
+                        <td>15:00</td>
+                        <td>융캉루 카페 체험</td>
+                        <td>Cafe del Volcan</td>
+                        <td>90분</td>
+                    </tr>
+                    <tr>
+                        <td>16:30</td>
+                        <td>융지아루로 이동</td>
+                        <td>융지아루</td>
+                        <td>40분</td>
+                    </tr>
+                    <tr>
+                        <td>17:00</td>
+                        <td>녹색 집 촬영 및 마지막 카페</td>
+                        <td>녹색 집, GOOSE ISLAND</td>
+                        <td>60분</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="tips-box">
+                <h4>💡 오후 팁</h4>
+                <ul>
+                    <li>태양이 강하다면 선글라스 착용</li>
+                    <li>수시로 물 마시기</li>
+                    <li>피곤할 때마다 카페 휴식</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Budget -->
+        <div class="section">
+            <h2>💰 예산 가이드</h2>
+
+            <h3>1인당 예산 (1일)</h3>
+            <div class="price-guide">
+                <div class="price-category">
+                    <h4>지하철</h4>
+                    <p>10-20위안</p>
+                    <span>교통</span>
+                </div>
+                <div class="price-category">
+                    <h4>커피</h4>
+                    <p>60-100위안</p>
+                    <span>3-4잔</span>
+                </div>
+                <div class="price-category">
+                    <h4>디저트</h4>
+                    <p>50-80위안</p>
+                    <span>간식</span>
+                </div>
+                <div class="price-category">
+                    <h4>식사</h4>
+                    <p>100-200위안</p>
+                    <span>식사</span>
+                </div>
+            </div>
+
+            <h3>총 예산</h3>
+            <div class="price-guide">
+                <div class="price-category">
+                    <h4>최소</h4>
+                    <p>220-400위안</p>
+                    <span>약 35,000-64,000원</span>
+                </div>
+                <div class="price-category">
+                    <h4>평균</h4>
+                    <p>400-600위안</p>
+                    <span>약 64,000-96,000원</span>
+                </div>
+                <div class="price-category">
+                    <h4>럭셔리</h4>
+                    <p>600-1000위안</p>
+                    <span>약 96,000-160,000원</span>
+                </div>
+            </div>
+
+            <div class="tips-box">
+                <h4>💡 팁</h4>
+                <ul>
+                    <li>알리페이로 결제하면 환율 우대</li>
+                    <li>현금보다 모바일 결제 편리</li>
+                    <li>한국 원화로 미리 환전할 필요 없음</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h2>🎨 맞춤형 여행 계획 받으세요</h2>
+            <p class="subtitle">더 완벽한 상하이 여행을 위해 전문가가 직접 설계하는 개인화된 여행 계획을 받아보세요.</p>
+            
+            <form class="cta-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name" placeholder="홍길동" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">이메일 주소</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="travel-date">여행 일자</label>
+                    <input type="text" id="travel-date" name="travel-date" placeholder="예: 2026년 5월 1일 ~ 5월 5일">
+                </div>
+                
+                <div class="form-group">
+                    <label for="travelers">여행 인원</label>
+                    <select id="travelers" name="travelers">
+                        <option value="1">1인</option>
+                        <option value="2">2인</option>
+                        <option value="3-4">3-4인</option>
+                        <option value="5+">5인 이상</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget">예산 범위 (1인당)</label>
+                    <select id="budget" name="budget">
+                        <option value="economy">경제형 (30-50만원)</option>
+                        <option value="standard" selected>일반형 (50-80만원)</option>
+                        <option value="premium">프리미엄 (80-120만원)</option>
+                        <option value="luxury">럭셔리 (120만원 이상)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="interests">관심 분야</label>
+                    <select id="interests" name="interests">
+                        <option value="food">미식 탐방</option>
+                        <option value="culture">문화 역사</option>
+                        <option value="shopping">쇼핑</option>
+                        <option value="photo">사진 촬영</option>
+                        <option value="relax">여유 휴식</option>
+                        <option value="all">전체 커스터마이징</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">추가 요청사항</label>
+                    <textarea id="message" name="message" placeholder="특별히 가보고 싶은 장소, 식사 제약 사항, 기타 요청사항을 자유롭게 적어주세요."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">무료 상담 신청하기</button>
+            </form>
+
+            <div class="cta-features">
+                <div class="cta-feature">
+                    <div class="icon">📋</div>
+                    <h4>개인화 일정</h4>
+                    <p>취향에 맞는 맞춤형 여행 계획</p>
+                </div>
+                <div class="cta-feature">
+                    <div class="icon">🍽️</div>
+                    <h4>미식 추천</h4>
+                    <p>현지 전문가가 엄선한 맛집</p>
+                </div>
+                <div class="cta-feature">
+                    <div class="icon">📱</div>
+                    <h4>실시간 지원</h4>
+                    <p>여행 중 문의에 빠른 답변</p>
+                </div>
+                <div class="cta-feature">
+                    <div class="icon">✨</div>
+                    <h4>특별 팁</h4>
+                    <p>현지인만 아는 숨은 보석</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final Section -->
+        <div class="final-section">
+            <h2>✨ 행복한 여행 되세요!</h2>
+            <p>상하이의 플라타너스 거리는 단순한 관광지가 아닙니다.<br>
+            이것은 현대 중국의 과거와 현재가 공존하는 공간입니다.<br>
+            빈티지 상점과 현대 카페, 오래된 건물과 트렌드 디자인,<br>
+            현지인의 일상과 관광객의 시선이 어우러진 거리입니다.</p>
+
+            <p>이 루트의 진짜 매력은 명소에 있는 것이 아니라,<br>
+            그 거리들 사이에 숨겨진 작은 발견들입니다.</p>
+
+            <p>서울의 활기와 여의도의 여유, 성수동의 트렌디함이 섞여 있는<br>
+            완벽한 하루를 상상해 보세요.</p>
+
+            <p>행복한 여행 되세요! 즐거운 시티워킹!<br>
+            🚶‍♀️🌿☕📸</p>
+
+            <p style="margin-top: 24px; font-size: 0.85em; color: #737373;">
+                *이 가이드는 2026년 3월 기준으로 작성되었습니다.<br>
+                매장 운영 시간과 메뉴는 변경될 수 있습니다.<br>
+                여행 전에 최신 정보를 확인해 주세요.
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2026 상하이 여행 가이드 | 한국인을 위한 플라타너스 거리 시티워킹 완벽 코스</p>
         </footer>
+
+        <script>
+            function handleSubmit(event) {
+                event.preventDefault();
+                
+                // 폼 데이터 수집
+                const formData = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    travelDate: document.getElementById('travel-date').value,
+                    travelers: document.getElementById('travelers').value,
+                    budget: document.getElementById('budget').value,
+                    interests: document.getElementById('interests').value,
+                    message: document.getElementById('message').value,
+                    timestamp: new Date().toISOString()
+                };
+
+                // 로컬 스토리지에 저장 (실제 서버로 전송 전 임시 저장)
+                localStorage.setItem('travelRequest_' + Date.now(), JSON.stringify(formData));
+
+                // 성공 메시지 표시
+                alert('✅ 신청이 완료되었습니다!\n\n입력하신 이메일로 개인화된 여행 계획을 보내드리겠습니다.\n\n영업일 기준 1-2일 내로 연락드리겠습니다.');
+                
+                // 폼 초기화
+                event.target.reset();
+
+                // 실제 구현을 위한 방법 (선택사항):
+                /*
+                // 방법 1: Google Sheets 연동
+                fetch('YOUR_GOOGLE_SCRIPT_URL', {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                // 방법 2: 이메일 서비스 (EmailJS 등)
+                emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData);
+
+                // 방법 3: 자체 서버 API
+                fetch('/api/travel-request', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+                */
+            }
+        </script>
     </div>
 </body>
 </html>
